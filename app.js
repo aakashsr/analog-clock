@@ -30,6 +30,7 @@ function calculateCurrentTime(hr, min, sec) {
 function getCurrentTime(hr, min, sec) {
   console.log("hr", hr, "min", min, "sec", sec);
   if (!automatic) {
+    // clear previous setInterval if automatic is false
     window.clearInterval(timer);
   }
 
